@@ -1,0 +1,45 @@
+{
+    "name": "q-alliance/crontab-manager",
+    "description": "Crontab Manager",
+    "type": "library",
+    "keywords": [
+        "q-software",
+        "q-alliance",
+        "crontab",
+        "crontab-manager"
+    ],
+    "homepage": "https://github.com/q-alliance/crontab-manager",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Ante Crnogorac",
+            "email": "ante@q-software.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "QAlliance\\CrontabManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "QAlliance\\CrontabManager\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "symfony/process": ">3.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": ">0.11",
+        "phpunit/phpunit": "^7.3",
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "scripts": {
+        "fix-cs": "@php vendor/bin/php-cs-fixer fix"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
